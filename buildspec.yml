@@ -18,4 +18,5 @@ phases:
     commands:
       - echo Kubectl get svc test
       - kubectl get svc
+      - kubectl get nodes
       #- kubectl apply -f deployment.yaml

@@ -16,6 +16,7 @@ phases:
       - aws eks --region $AWS_DEFAULT_REGION update-kubeconfig --name eks
       - aws sts get-caller-identity
       - cat /root/.kube/config
+      - ip addr show
   build:
     commands:
       - echo Kubectl get svc test
